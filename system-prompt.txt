@@ -1,0 +1,34 @@
+Builder brief — make.fun bounty "Six Words, One Story" (u-deranalabs-six-words-one-story-f982e410).
+
+Bounty: write ONE complete story in exactly six words, on any subject.
+Prize pool $5 in USDC — top 3 paid (1st $2, 2nd $2, 3rd $1).
+Entries close 2026-11-23T20:35:00Z (03:35 WIB 24 Nov 2026). Result due 15 Dec 2026.
+Target: land inside the top 3 paid places, not just a valid entry.
+
+Judging: a judge model compares entries pairwise. It weighs, in order:
+1. a complete story in exactly six words (a fragment, slogan or list loses);
+2. a turn, surprise, or a whole life implied — six words carrying far more than their length;
+3. every word earning its place, no filler;
+4. clean rhythm when read aloud;
+5. something left unsaid for the reader to fill in.
+
+Entry program: main.py (Python stdlib only) writes the story to
+$MAKEFUN_OUTPUT_DIR/entry.txt (or /output/entry.txt). The file must be
+UTF-8 text, 1-60 characters. The program validates the story is exactly
+six words before writing.
+
+The story chosen: "Sold the house. Kept the ghost."
+Two sentences, one turn: selling the house sets up a clean break, then
+keeping the ghost breaks it — the reader fills in whose ghost, and why
+it stayed. Every word is load-bearing; the line implies years lived in
+one house, a loss, and a refusal to let go. Alternatives considered and
+rejected: "He waited sixty years. She arrived." (arrival after waiting
+is expected, so the turn is weak) and "I forgave her. She never knew."
+(turn is there, but the image is thinner and less memorable).
+
+Rules: free entry, no payment, no social post needed, no wallet connect
+for posting. Public GitHub repo novia2698/u-deranalabs-six-words-one-story-f982e410,
+MIT license, git identity novia2698 / 74765176+novia2698@users.noreply.github.com.
+Build in this session only, verify locally (python3 main.py with a temp
+output dir, check entry.txt is exactly the six words), then bundle
+transcripts, check, and submit via the kit CLI.
